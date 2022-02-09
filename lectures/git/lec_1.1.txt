@@ -1,0 +1,7 @@
+Git 
+version control system
+
+1. Make a repo in github and local folder with same name
+2. open gitbash
+3. git init
+4. git add 
