@@ -1,0 +1,13 @@
+Java
+ --open source oop language, platform independant, write once run anywhere, compiled, static typed language, used web n mobile development
+
+JRE - java run enviornment 
+JDK - java development kit
+
+java code --> compile --> class file --> system
+
+IDE -- STS, Intellij, VS
+
+https://www.jetbrains.com/idea/download/#section=windows
+
+https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html#license-lightbox
