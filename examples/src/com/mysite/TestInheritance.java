@@ -24,15 +24,19 @@ class ScientificCalc extends Calculator2{
 
 public class TestInheritance{
 
-    public static void main(String[] args){
+    public static void main(String[] args)throws Exception{
         //child --> parent
         //3. Internally casting is taking place so becomes parent and no access to child properties
         Calculator2 obj1 = new ScientificCalc();
         //obj1.areaCube(5);
 
         //parent --> child
-        ScientificCalc obj = (ScientificCalc) new Calculator2();
-        obj.areaCube(6);
+        try {
+            ScientificCalc obj = (ScientificCalc) new Calculator2();
+            obj.areaCube(6);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
 
 
         /*
