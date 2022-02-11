@@ -5,7 +5,7 @@ package com.mysite;
 abstract class RBILoanCalculator{
 
     //abstract method --> just signature no body
-    abstract void emiCalculator(int rate);
+    public abstract void emiCalculator(int rate);
 
     //non abstract
     public void printMe(){
@@ -16,7 +16,7 @@ abstract class RBILoanCalculator{
 class SBIBank extends RBILoanCalculator{
 
     @Override
-    void emiCalculator(int rate) {
+    public void emiCalculator(int rate) {
         System.out.println("here is calculation of SBI bank."+rate);
     }
 }
@@ -24,7 +24,7 @@ class SBIBank extends RBILoanCalculator{
 class HDFCBank extends RBILoanCalculator{
 
     @Override
-    void emiCalculator(int rate) {
+    public void emiCalculator(int rate) {
         System.out.println("here is calculation of HDFC bank."+rate);
     }
 }
