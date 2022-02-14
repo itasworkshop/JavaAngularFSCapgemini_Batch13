@@ -33,6 +33,7 @@ class User extends Object{
         return "hello";
     }*/
 
+    /*
     //equals to tell how my two object are going to be considered eqal to each other or not
     public boolean equals(Object o) {
         if ((o instanceof User) && (((User) o).getId() == this.getId())) {
@@ -40,7 +41,7 @@ class User extends Object{
         } else {
             return false;
         }
-    }
+    }*/
 
     //hashCode --> to get better performance while searching your object
     public int hashCode() {
@@ -52,11 +53,15 @@ public class TestObjectMethods {
 
     public static void main(String[] args){
         User user1 = new User(101,"Rajesh");
-        User user2 = new User(102,"Rajesh");
+        User user2 = new User(101,"Rajesh");
 
         System.out.println(user1.equals(user2));
 
         System.out.println(user1);
         System.out.println(user2);
+
+        //1. if two objects are equal, will their hascode be equal or different? --> will always be equal
+        //2. if two objects are not equal, will their hascode be equal or different? --> may o may not have same hashcode
+        //3. should i implement eqauls for hashcode? --> yes
     }
 }
