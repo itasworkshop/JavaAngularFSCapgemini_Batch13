@@ -21,7 +21,7 @@ public class TestComparator {
         Student s3 = new Student(103, "John");
         Student s4 = new Student(104, "Tom");
 
-        ArrayList<Student> mylist = new ArrayList<>();
+        ArrayList<Student> mylist = new ArrayList<>(); //no type safety without generic
         mylist.add(s1);
         mylist.add(s2);
         mylist.add(s3);
